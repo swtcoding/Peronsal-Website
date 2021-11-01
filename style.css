@@ -1,0 +1,289 @@
+/* General CSS*/
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    background-color: #ECF4D7;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* Navigation Style */
+.navbar-main {
+
+    background-color: #ECF4D7;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: black;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 2em;
+    padding-right: 60px;
+}
+
+.navbar-menu li:hover {
+    transition: 0.3s ease;
+    padding-top: 1px;
+   }
+
+.navbar-menu li {
+    padding: 5px 14px;
+   }
+
+.navbar-menu a {
+    color: black;
+}
+
+.navbar-menu a:hover {
+  color: rgb(236, 163, 78);
+}
+
+.logo {
+    font-size: 20px;
+    color: black;
+    padding-left: 60px;
+}
+
+/* Hello World effect starts here*/
+
+header {
+    height: 200vh;
+    background-color:#ECF4D7;
+    margin-top: 0;
+}
+
+.container {
+    clip: rect(0, auto, auto, 0);
+    overflow: hidden;
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    width: 100%;
+    mask-image: -webkit-linear-gradient(top, #ffffff 0%,#ffffff 100%);
+  }
+
+.container-colour {
+  background: #ECF4D7;
+}
+  
+.title-style {
+  position: fixed;
+  display: block;  
+  margin: auto;
+  width: 100%;
+  /* center the text wrapper vertically */
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  
+  .container-colour h1 {
+    text-align: center;
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+  }
+  
+  .container-colour .title-style h1 {
+    /* the text background */
+    background: url(https://images.unsplash.com/photo-1517449905587-f80695d63356?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2069&q=80);
+    background-size: 100vw auto;
+    background-position: center;
+    
+    /* clip the text is possible */
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+    /* fallback text color */
+    color: #D0E3EA;
+  }
+  
+  .container-img {
+    /* Grab a free image from unsplash */
+    background-image: url(https://images.unsplash.com/photo-1517449905587-f80695d63356?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2069&q=80);
+    background-size:100vw auto;
+    background-position: center;
+    background-attachment: fixed;
+    
+    /* position the second container below the first container */
+    top: 110vh;
+  }
+  
+  .container-img .title-style h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    color: #ECF4D7;
+  }
+  
+
+
+/* Introduction style */
+
+  .intro {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(37, 36, 36);
+    display: grid;
+    color: rgb(128, 127, 127);
+  }
+
+  span {
+    color: rgb(236, 163, 78);
+  }
+
+  .intro .about {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+
+  }
+
+  .intro .about h1{
+    padding-left: 60px;
+    padding-top: 40px;
+  }
+
+  .intro .cs-photo {
+    grid-column-start: span 2;
+    grid-row-start: 3;
+
+  }
+
+  .cs-photo img{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-left: 120px;
+
+  }
+
+  .intro-message {
+    grid-column-start: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    margin-right: 100px;
+
+  }
+
+  .intro-message h1{
+    text-align: left;
+    font-size: 50px;
+    padding-left: 110px;
+    color: whitesmoke;
+  }
+
+  .intro-message p{
+    text-align: left;
+    padding-left: 110px;
+    color: whitesmoke;
+    font-size: 20px;
+
+  }
+  
+
+  /* Strength and Motivation Paragraph */
+  .other {
+      height: 80vh;
+      width: 100%;
+      background-color: #ECF4D7;
+      color: black;
+  }
+
+.strength {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.strength .s1 {
+  height: 100%;
+  width: 15%;
+}
+
+.strength .s1 img {
+  padding-top: 80px;
+  padding-left: 50px;
+}
+
+.strength .s2 {
+  height: 100%;
+  width: 80%;
+  padding-top: 20px;
+}
+
+.motivation {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  margin-top: 60px;
+}
+
+.motivation .m1 {
+  height: 100%;
+  width: 15%;
+}
+
+.motivation .m1 img {
+  padding-top: 80px;
+  padding-left: 50px;
+}
+
+.motivation .m2 {
+  height: 100%;
+  width: 80%;
+  padding-top: 30px;
+}
+
+/* Footer and others style */
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #ECF4D7;
+  display: grid;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  text-align: center;
+  font-size: smaller;
+  color: rgb(24, 23, 23);
+  padding-top: 15px;
+}
+
+.socials {
+  color: rgb(24, 23, 23);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.socials-logo {
+  margin: 0 5px;
+}
+
+ion-icon {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
