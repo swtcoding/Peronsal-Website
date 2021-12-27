@@ -19,7 +19,6 @@ li {
 .navbar-main {
 
     background-color: #ECF4D7;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,8 +28,8 @@ li {
 
 .navbar-menu {
     display: flex;
-    gap: 2em;
-    padding-right: 60px;
+    gap: 2rem;
+    padding-right: 2rem;
 }
 
 .navbar-menu li:hover {
@@ -209,50 +208,6 @@ header {
       color: black;
   }
 
-.strength {
-  height: 50%;
-  width: 100%;
-  display: flex;
-}
-
-.strength .s1 {
-  height: 100%;
-  width: 15%;
-}
-
-.strength .s1 img {
-  padding-top: 80px;
-  padding-left: 50px;
-}
-
-.strength .s2 {
-  height: 100%;
-  width: 80%;
-  padding-top: 20px;
-}
-
-.motivation {
-  height: 50%;
-  width: 100%;
-  display: flex;
-  margin-top: 60px;
-}
-
-.motivation .m1 {
-  height: 100%;
-  width: 15%;
-}
-
-.motivation .m1 img {
-  padding-top: 80px;
-  padding-left: 50px;
-}
-
-.motivation .m2 {
-  height: 100%;
-  width: 80%;
-  padding-top: 30px;
-}
 
 /* Footer and others style */
 
