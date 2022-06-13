@@ -10,83 +10,82 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&family=Shadows+Into+Light&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="projects.css">
     <title>Project | Aaron Sze</title>
 </head>
 
 <body>
     <!-- Navigation starts here -->
-    <nav class="navbar-main">
-        <a class="logo" href="">AARON SZE</a>
-        <ul class="navbar-menu">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="index.html#about">About</a>
-            </li>
-            <li>
-                <a href="projects.html">Projects</a>
-            </li>
-            <li>
-                <a href="cv.html">CV</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid navbar-main">
+            <a class="navbar-brand logo" href="index.html">AARON SZE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav navbar-menu ms-auto">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="index.html#about">About</a>
+                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link" href="cv.html">CV</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
     </nav>
-
-    <!-- Title -->
-    <header>
-        <h1>Projects</h1>
-    </header>
 
     <!-- Projects -->
     <main>
-        <section class="sudoku">
-            <div class="su1">
-                <h2>Sudoku Solver</h2>
-                <p>Sudoku Solver is a program that can solve any sudoku puzzles using backtracking and recursion.</p>
-                <a href="https://github.com/swtcoding/Sudoku-Solver" class="su-btn">
-                    <button>CHECK IT OUT</button>
-                </a>
-
+        <section>
+            <div class="container-fluid">
+                <!-- Title -->
+                <div class="row">
+                    <header>
+                        <h1 class="text-decoration-underline">Projects</h1>
+                    </header>
+                </div>
+                <div class="row mb-5">
+                    <div class="col text-center">
+                        <h2>Sudoku Solver</h2>
+                        <p class="text-center">Sudoku Solver is a program that can solve any sudoku puzzles using
+                            backtracking and recursion.
+                        </p>
+                        <a href="https://github.com/swtcoding/Sudoku-Solver">
+                            <button id="btn">CHECK IT OUT</button>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <img src="https://i.imgur.com/jjlslvb.jpg" id="su2">
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col text-center">
+                        <h2>AI Playing snake!</h2>
+                        <p>AI playing snake is a program that AI will learn how to play snake and optimize its own
+                            strategy through playing it continously.</p>
+                        <a href="https://github.com/swtcoding/AI-Snake">
+                            <button id="btn">CHECK IT OUT</button>
+                        </a>
+                    </div>
+                    <div class="col text-center">
+                        <img src="https://i.imgur.com/jpcL1Du.png">
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col text-center">
+                        <h2>Ecommerce Website for cat stuff</h2>
+                        <p>It is an ecommerce website demo designed for selling cat products.</p>
+                        <button id="btn">CHECK IT OUT</button>
+                    </div>
+                    <div class="col text-center">
+                        <img src="https://i.imgur.com/MpiLnPS.png">
+                    </div>
+                </div>
             </div>
-            <div class="su2">
-                <img src="https://i.imgur.com/jjlslvb.jpg">
-            </div>
-
         </section>
-        <section class="snake">
-            <div class="sn1">
-                <h2>AI Playing snake!</h2>
-                <p>AI playing snake is a program that AI will learn how to play snake and optimize its own
-                    strategy through playing it continously. It was built from scratch using Pygame and Pytorch.
-                    Reinforcement learning and Deep Q learning were both applicable to this program.</p>
-                <a href="https://github.com/swtcoding/AI-Snake" class="snake-btn">
-                    <button>CHECK IT OUT</button>
-                </a>
-
-            </div>
-            <div class="sn2">
-                <img src="https://i.imgur.com/jpcL1Du.png">
-            </div>
-        </section>
-
-        <section class="apath">
-            <div class="a1">
-                <h2>A* Pathfinding Algorithm(In Progress)</h2>
-                <p>It is an algorithm that searches for the shortest path between the starting point and the ending
-                    point. It is therefor an algorithm widely used in maps.</p>
-                <button> WAIT FOR IT</button>
-            </div>
-            <div class="a2">
-                <img src="https://i.imgur.com/MpiLnPS.png">
-            </div>
-        </section>
-
-
     </main>
 
     <!-- Footer and other materials -->

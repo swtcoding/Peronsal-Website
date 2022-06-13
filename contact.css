@@ -8,47 +8,30 @@ body {
 
 /* Navigation starts */
 
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
 .navbar-main {
 
     background-color: #ECF4D7;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 10px;
     color: black;
 }
 
+
 .navbar-menu {
     display: flex;
-    gap: 2em;
-    padding-right: 60px;
-}
-
-.navbar-menu li:hover {
-    transition: 0.3s ease;
-    padding-top: 1px;
-   }
-
-.navbar-menu li {
-    padding: 5px 14px;
-   }
-
-.navbar-menu a {
-    color: black;
+    gap: 2rem;
+    padding-right: 2rem;
 }
 
 .navbar-menu a:hover {
+    transition: 0.3s ease;
+    padding-top: 1px;
     color: rgb(236, 163, 78);
-  }
+}
+
+.navbar-menu a {
+    padding: 5px 14px;
+    color: black;
+}
 
 .logo {
     font-size: 20px;
@@ -76,7 +59,7 @@ header h1 {
 
 .con {
     height: 80vh;
-    background-color:  rgb(37, 36, 36);
+    background-color: rgb(37, 36, 36);
     color: rgb(128, 127, 127);
     display: flex;
     width: 100%;
@@ -98,7 +81,7 @@ header h1 {
     margin: auto;
     padding: 0 0px;
     overflow: hidden;
-    margin-top: 40px;
+    margin-top: 80px;
 }
 
 .contact-form {
@@ -114,7 +97,7 @@ header h1 {
     border: none;
     border-bottom: 3px solid rgb(236, 163, 78);
     font-size: 30px;
-    
+
 }
 
 .contact-btn {
@@ -132,6 +115,21 @@ header h1 {
     background-color: rgb(245, 138, 8);
 }
 
+@media(max-width:600px) {
+    .con h1 {
+        font-size: 25px;
+    }
+
+    .contact-form {
+        font-size: 20px;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+}
+
+
 /* Footer and other materals */
 
 footer {
@@ -141,28 +139,27 @@ footer {
     display: grid;
     margin-top: 60px;
     margin-bottom: 20px;
-  }
-  
-  footer p {
+}
+
+footer p {
     text-align: center;
     font-size: smaller;
     color: rgb(24, 23, 23);
     padding-top: 15px;
-  }
-  
-  .socials {
+}
+
+.socials {
     color: rgb(24, 23, 23);
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .socials-logo {
+}
+
+.socials-logo {
     margin: 0 5px;
-  }
-  
-  ion-icon {
+}
+
+ion-icon {
     font-size: 20px;
     color: black;
     text-align: center;
-  }
-
+}

@@ -1,52 +1,35 @@
 /* General CSS */
 
 body {
-        font-family: 'Merriweather', serif;
-        margin: 0;
-        background-color:#ECF4D7;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    background-color: #ECF4D7;
 }
 
 /* Navigation part */
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
 .navbar-main {
 
     background-color: #ECF4D7;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 10px;
+    color: black;
 }
 
 .navbar-menu {
     display: flex;
-    gap: 2em;
-    padding-right: 60px;
-}
-
-.navbar-menu li:hover {
-    transition: 0.3s ease;
-    padding-top: 1px;
-   }
-
-.navbar-menu li {
-    padding: 5px 14px;
-   }
-
-.navbar-menu a {
-    color: black;
+    gap: 2rem;
+    padding-right: 2rem;
 }
 
 .navbar-menu a:hover {
+    transition: 0.3s ease;
+    padding-top: 1px;
     color: rgb(236, 163, 78);
-  }
+}
+
+.navbar-menu a {
+    padding: 5px 14px;
+    color: black;
+}
 
 .logo {
     font-size: 20px;
@@ -73,104 +56,44 @@ header h1 {
 /* Education part */
 
 .ed {
-    margin: 100px 180px;
-    font-size: 25px;
+    font-size: 15px;
     color: rgb(128, 127, 127);
-}
-
-section {
-    height: 25vh;
-    width: 100%;
-    display: flex;
-    margin-bottom: 80px;
-    color: rgb(128, 127, 127);
-}
-
-section .u1 {
-    height: 100%;
-    width: 40%;
-    
-}
-
-section .u2 {
-    padding-left: 50px;
-    padding-top: 30px;
-}
-
-section .c1 {
-    height: 100%;
-    width: 40%;
-}
-
-section .c2 {
-    padding-left: 50px;
-    padding-top: 30px;
-}
-
-section .n1 {
-    height: 100%;
-    width: 40%;
-}
-
-section .n2 {
-    padding-left: 50px;
 }
 
 .uol img {
     height: 160px;
-    width: 140px;
+    width: 150px;
     float: right;
-    padding-right: 50px;
+    padding-right: 30px;
 }
 
 .cuhk img {
     height: 160px;
     width: 180px;
     float: right;
+    margin-right: 20px;
+}
+
+.m1 img {
+    float: right;
+    margin-right: 20px;
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+h2 {
+    margin-left: 40px;
 }
 
 
 /* Experience part  */
 
-.ex {
-    margin: 100px 180px;
-    font-size: 25px;
-    color: rgb(128, 127, 127);
-}
-
-section .m1 {
-    height: 100%;
-    width: 40%;
-}
-
-section .m2 {
-    padding-left: 50px;
-}
-
-.m1 img {
-    float: right;
-}
-
 span {
     color: rgb(236, 163, 78);
 }
-
-/* Techologies and Languauges */
-
-.tnl {
-    margin: 100px 180px;
-    font-size: 25px;
-    color: rgb(128, 127, 127);
-}
-
-section img {
-    padding: 30px 30px;
-}
-
-section .app1 {
-    display: inline-block;
-}
-
 
 /* Footer style */
 
@@ -181,27 +104,27 @@ footer {
     display: grid;
     margin-top: 60px;
     margin-bottom: 20px;
-  }
-  
-  footer p {
+}
+
+footer p {
     text-align: center;
     font-size: smaller;
     color: rgb(24, 23, 23);
     padding-top: 15px;
-  }
-  
-  .socials {
+}
+
+.socials {
     color: rgb(24, 23, 23);
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .socials-logo {
+}
+
+.socials-logo {
     margin: 0 5px;
-  }
-  
-  ion-icon {
+}
+
+ion-icon {
     font-size: 20px;
     color: black;
     text-align: center;
-  }
+}

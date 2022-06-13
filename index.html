@@ -15,31 +15,30 @@
         href="https://fonts.googleapis.com/css2?family=Lobster&family=Permanent+Marker&family=Shadows+Into+Light&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Home | Aaron Sze</title>
 </head>
 
 <body>
-    <!-- Navigation starts here -->
-    <nav class="navbar-main">
-        <a class="logo" href="">AARON SZE</a>
-        <ul class="navbar-menu">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="projects.html">Projects</a>
-            </li>
-            <li>
-                <a href="cv.html">CV</a>
-            </li>
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid navbar-main">
+            <a class="navbar-brand logo" href="index.html">AARON SZE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav navbar-menu ms-auto">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link" href="cv.html">CV</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <!-- Upper part of the Home Page -->
@@ -61,30 +60,51 @@
 
         <!-- Self introduction -->
         <section class="intro">
-            <div class="about" id="about">
-                <h1>About</h1>
-            </div>
-            <div class="cs-photo">
-                <img src="https://i.imgur.com/GVcuL11.jpg" alt="Myself and mycat">
-            </div>
-
-            <div class="intro-message">
-                <h1>I am a <span>software engineer</span><br>and I love <span>cats</span></h1>
-                <p>I am studying B.Sc. in Software Engineering at University of Leicester. I have always loved
-                    trying new things and solving puzzles. <br> I am currently working on some AI related mini projects!
-                </p>
+            <div class="container-fluid">
+                <div class="row h-25" id="about">
+                    <div class="col">
+                        <h1 class="pt-5 pl-5">About</h1>
+                    </div>
+                </div>
+                <div class="row h-75">
+                    <div class="col cs-photo text-center">
+                        <img src="https://i.imgur.com/GVcuL11.jpg" alt="Myself and mycat">
+                    </div>
+                    <div class="col intro-message text-center">
+                        <h1>I am a <span>software engineer</span><br>and I love <span>cats</span></h1>
+                        <p class="pt-2 pb-2"></p>
+                        <p>I am studying B.Sc. in Computer Science at University of Leicester. <br>
+                            I always love trying new things and solving puzzles. <br>
+                            I am interested in full stack development as well as blockchain technologies.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- What should I put in here -->
         <section class="other">
-
+            <div class="container-fluid">
+                <div class="row mt-5"></div>
+                <div class="row text-center mt-5">
+                    <h5>Click the picture below to get a randon <span>fact</span> about <span>cat!</span></h5>
+                </div>
+                <div class="btn-photo mt-5 mb-5 d-flex justify-content-center">
+                    <button id="getFact">
+                        <img src="https://i.imgur.com/10gFZ7s.png" alt="Myself and mycat">
+                    </button>
+                    <!-- <input type="button" id="getFact"> -->
+                </div>
+                <div class="row text-center mt-5">
+                    <p id="showFact"></p>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Hyper link to related materials -->
     <footer>
-        <p>Inspired by my adorable cat ：P</p>
+        <p>Inspired by my adorable cat :P</p>
         <div class="socials">
             <a href="https://github.com/swtcoding" class="socials-logo">
                 <ion-icon name="logo-github"></ion-icon>
@@ -101,6 +121,11 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>

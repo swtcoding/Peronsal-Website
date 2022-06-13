@@ -3,51 +3,33 @@
 body {
     font-family: 'Merriweather', serif;
     margin: 0;
-    background-color:#ECF4D7;
+    background-color: #ECF4D7;
 }
 
 /* Navigation */
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
 .navbar-main {
 
     background-color: #ECF4D7;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 10px;
     color: black;
 }
 
+
 .navbar-menu {
     display: flex;
-    gap: 2em;
-    padding-right: 60px;
-}
-
-.navbar-menu li:hover {
-    transition: 0.3s ease;
-    padding-top: 1px;
-   }
-
-.navbar-menu li {
-    padding: 5px 14px;
-   }
-
-.navbar-menu a {
-    color: black;
+    gap: 2rem;
+    padding-right: 2rem;
 }
 
 .navbar-menu a:hover {
-  color: rgb(236, 163, 78);
+    transition: 0.3s ease;
+    padding-top: 1px;
+    color: rgb(236, 163, 78);
+}
+
+.navbar-menu a {
+    padding: 5px 14px;
+    color: black;
 }
 
 .logo {
@@ -75,57 +57,19 @@ header h1 {
 /* Projects part */
 
 section {
-    height: 60vh;
+    /* height: 60vh; */
     width: 100%;
     display: flex;
     color: rgb(128, 127, 127);
     font-size: large;
 }
 
-section .su1 {
-    padding-left: 120px;
-    width: 60%;
+#su2 {
+    max-width: 250px;
+    max-height: 250px;
 }
 
-section .su2 {
-    padding-left: 80px;
-    padding-right: 120px;
-    width: 40%;
-    
-}
-
-section h2 {
-    font-size: 30px;
-}
-
-section .sn1 {
-    padding-left: 120px;
-    width: 60%;
-}
-
-section .sn2 {
-    padding-top: 30px;
-    padding-left: 80px;
-    padding-right: 120px;
-    width: 40%;
-}
-
-section .a1 {
-    padding-left: 120px;
-    width: 60%;
-}
-
-section .a2 {
-    padding-left: 80px;
-    padding-right: 120px;
-    width: 40%;
-}
-
-.snake {
-    padding-top: 100px;
-}
-
-button {
+#btn {
     height: 60px;
     width: 160px;
     border-style: solid;
@@ -136,13 +80,27 @@ button {
     color: rgb(128, 127, 127);
 }
 
-button:hover {
+#btn:hover {
     transition: 0.5s;
     background-color: rgb(236, 163, 78);
     color: whitesmoke;
     border-color: rgb(236, 163, 78);
 }
 
+@media(max-width:500px) {
+    #btn {
+        height: 40px;
+        width: 100px;
+    }
+
+    section {
+        font-size: small;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+}
 
 /* Footer and other materials */
 
@@ -153,27 +111,27 @@ footer {
     display: grid;
     margin-top: 60px;
     margin-bottom: 20px;
-  }
-  
-  footer p {
+}
+
+footer p {
     text-align: center;
     font-size: smaller;
     color: rgb(24, 23, 23);
     padding-top: 15px;
-  }
-  
-  .socials {
+}
+
+.socials {
     color: rgb(24, 23, 23);
     text-align: center;
     margin-bottom: 20px;
-  }
-  
-  .socials-logo {
+}
+
+.socials-logo {
     margin: 0 5px;
-  }
-  
-  ion-icon {
+}
+
+ion-icon {
     font-size: 20px;
     color: black;
     text-align: center;
-  }
+}
